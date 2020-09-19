@@ -179,3 +179,39 @@ console.log(user.sayHello());
 
 ---
 
+##### 7. Какой будет вывод?
+
+```javascript
+function iKnowYourName() {
+  function getName() {
+    return arguments[0]
+  }
+  const getLastname = () => {
+    return arguments[1]
+  }
+
+  return `Your name is: ${getName()} ${getLastname()}`
+}
+
+console.log( iKnowYourName('Darth', 'Vader') )
+```
+
+1. `Your name is Darth Vader`
+2. `Your name is undefined Vader`
+3. `Your name is Darth undefined`
+4. `Your name is undefined undefined`
+
+<details><summary><b>Ответ</b></summary>
+<p>
+
+**Ответ: 2**
+
+У стрелочных функций отсутствует переменная `arguments`.
+
+В данном случае функция `getName` обращается к своей переменной `arguments`, а функция `getLastName` берет `arguments` из функции `iKnowYourName`.
+
+</p>
+</details>
+
+---
+
