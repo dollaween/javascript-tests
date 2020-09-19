@@ -30,7 +30,7 @@ console.log('Log');
 
 ```html
 <div id="container">
-  <div id="button">button</div>
+  <div id="button">Get cities</div>
 </div>
 ```
 
@@ -52,8 +52,8 @@ container.addEventListener('click', () => {
 button.click()
 ```
 
-1. `Moscow`, `Piter`, `Novosibirsk`
-2. `Piter`, `Moscow`, `Novosibirsk`
+1. `Moscow` `Piter` `Novosibirsk`
+2. `Piter` `Moscow` `Novosibirsk`
 3. `Novosibirsk` `Moscow` `Piter`
 4. `Moscow` `Novosibirsk` `Piter`
 
