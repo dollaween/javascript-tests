@@ -1,4 +1,11 @@
-# Javascript. Тесты по движку
+<div align="center">
+
+<h1>Javascript. Тесты по движку</h1>
+
+<b>Смотрите также:</b>
+<a href="https://github.com/dollaween/javascript-tests">На главную</a> | <a href="https://github.com/dollaween/javascript-questions">Вопросы</a> | <a href="https://github.com/dollaween/javascript-tasks">Задачи</a>
+
+</div>
 
 ---
 
