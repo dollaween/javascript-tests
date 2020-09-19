@@ -61,7 +61,7 @@ const city = 'Meereen'
 ```
 
 1. `ReferenceError`
-2. `TypeError`
+2. `SystemError`
 3. `Meereen`
 4. `undefined`
 
@@ -74,3 +74,36 @@ const city = 'Meereen'
 
 </p>
 </details>
+
+---
+
+##### Какой будет вывод?
+
+```javascript
+function outerFunction() {
+  function innerFunction() {
+    console.log(this)
+  }
+  innerFunction()
+}
+outerFunction()
+```
+
+1. `outerFunction`
+2. `innerFunction`
+3. `window`
+4. `undefined`
+
+<details><summary><b>Ответ</b></summary>
+<p>
+
+**Ответ: 3**
+
+В контексте выполнения функции значение `this` зависит от того, как именно была вызвана функция. Если она вызвана в виде метода объекта, тогда значение `this` привязано к этому объекту. В других случаях `this` привязывается к глобальному объекту или устанавливается в `undefined` (в строгом режиме).
+
+</p>
+</details>
+
+---
+
+
