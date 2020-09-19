@@ -80,17 +80,17 @@ const city = 'Meereen'
 ##### Какой будет вывод?
 
 ```javascript
-function outerFunction() {
-  function innerFunction() {
+function outer() {
+  function inner() {
     console.log(this)
   }
-  innerFunction()
+  inner()
 }
-outerFunction()
+outer()
 ```
 
-1. `outerFunction`
-2. `innerFunction`
+1. `outer`
+2. `inner`
 3. `window`
 4. `undefined`
 
@@ -102,6 +102,39 @@ outerFunction()
 В контексте выполнения функции значение `this` зависит от того, как именно была вызвана функция. Если она вызвана в виде метода объекта, тогда значение `this` привязано к этому объекту. В других случаях `this` привязывается к глобальному объекту или устанавливается в `undefined` (в строгом режиме).
 
 В браузере глобальным объектом является `window`, в Node.js — `global`.
+
+</p>
+</details>
+
+---
+
+##### В какую области видимости будет записана переменная `name`?
+
+```javascript
+
+function outer() {
+  function inner() {
+    name = 'Luke'
+  }
+  inner()
+}
+outer()
+
+```
+
+1. Глобальную
+2. `outer`
+3. `inner`
+4. `SystemError`
+
+<details><summary><b>Ответ</b></summary>
+<p>
+
+**Ответ: 1**
+
+Когда встречается переменная без ключевого слова `var`, `const`, `let` — она записывается в глобальную область видимости. В браузере это объект `window`, в Node.js — объект `global`.
+
+В строгом моде `use strict` будет выброшена ошибка `ReferenceError`.
 
 </p>
 </details>
