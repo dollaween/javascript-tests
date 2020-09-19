@@ -147,4 +147,35 @@ outer()
 
 ---
 
+##### 6. Какой будет вывод?
+
+```javascript
+const user = {
+  login: 'Darth Vader',
+  sayHello: () => {
+    return `Hello, i'm ${this.login}`
+  }
+}
+
+console.log(user.sayHello());
+```
+
+1. `Hello, i'm Darth Vader`
+2. `Hello, i'm`
+3. `Hello, u'm null`
+4. `Hello, i'm undefined`
+
+<details><summary><b>Ответ</b></summary>
+<p>
+
+**Ответ: 4**
+
+У стрелочных функций нет `this`. Если происходит обращение к `this`, его значение берется снаружи. 
+
+В данном случае, `this` будет указывать на глобальный объект, у которого нет свойства `login`.
+
+</p>
+</details>
+
+---
 
