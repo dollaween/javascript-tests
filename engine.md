@@ -3,7 +3,7 @@
 ---
 
 ##### Какой будет вывод?
-```
+```javascript
 console.log(user)
 var user = 'Jon Snow'
 ```
@@ -51,5 +51,26 @@ console.log(typeof person)
 </p>
 </details>
 
-
 ---
+
+##### Какой будет вывод?
+
+```javascript
+console.log(city)
+const city = 'Meereen'
+```
+
+1. `ReferenceError`
+2. `TypeError`
+3. `Meereen`
+4. `undefined`
+
+<details><summary><b>Ответ</b></summary>
+<p>
+
+**Ответ: 1**
+
+Во время создания контекста, переменные, объявленные через `const` и `let`, только объявляются, но не инициализируются.
+
+</p>
+</details>
