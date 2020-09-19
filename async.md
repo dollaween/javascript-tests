@@ -41,7 +41,7 @@ console.log('Log');
 ```
 
 ```javascript
-const container = document.getElementById('container');
+const container = document.getElementById('container')
 const button = document.getElementById('button')
 
 button.addEventListener('click', () => {
