@@ -25,3 +25,42 @@ console.log('Log');
 </details>
 
 ---
+
+##### 2. Какой будет порядок вывода консолей?
+
+```html
+<div id="container">
+  <div id="button">button</div>
+</div>
+```
+
+```javascript
+const container = document.getElementById('container');
+const button = document.getElementById('button')
+
+button.addEventListener('click', () => {
+  Promise.resolve()
+    .then(() => console.log('Piter'))
+
+  console.log('Moscow')
+})
+
+container.addEventListener('click', () => {
+  console.log('Novosibirsk')
+})
+
+button.click()
+```
+
+1. `Moscow`, `Piter`, `Novosibirsk`
+2. `Piter`, `Moscow`, `Novosibirsk`
+3. `Novosibirsk` `Moscow` `Piter`
+4. `Moscow` `Novosibirsk` `Piter`
+
+<details><summary><b>Ответ</b></summary>
+<p>
+
+**Ответ: 4**
+
+</p>
+</details>
