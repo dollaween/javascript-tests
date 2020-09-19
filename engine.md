@@ -216,3 +216,70 @@ console.log( iKnowYourName('Darth', 'Vader') )
 
 ---
 
+##### 8. Какой будет вывод?
+
+```javascript
+const fighter = {
+  name: 'Cassie',
+  sayName: function() {
+    console.log(this.name)
+  }
+}
+
+const fn = fighter.sayName.bind(fighter).bind({ name: 'Sonya' })
+fn()
+```
+
+1. `Cassie`
+2. `Sonya`
+3. `undefined`
+4. `SystemError`
+
+<details><summary><b>Ответ</b></summary>
+<p>
+
+**Ответ: 1**
+
+Метод `bind` привязывает контекст навсегда. Повторный вызов `bind` будет игнорироваться.
+
+</p>
+</details>
+
+---
+
+##### 9. Какой будет вывод?
+
+```javascript
+let winner = 'Sub-Zero'
+
+function getWinner() {
+  let winner = 'Scorpion'
+
+  let result = function() {
+    console.log(winner)
+  }
+
+  result.winner = 'Jax'
+
+  return result
+}
+
+getWinner().bind({ winner: 'Johny' })()
+```
+
+1. `Sub-Zero`
+2. `Scorpion`
+3. `Jax`
+4. `Johny`
+
+<details><summary><b>Ответ</b></summary>
+<p>
+
+**Ответ: 2**
+
+`this` у стрелочных функций берется из внешнего контекста, в данном случае — из функции `getWinner`.
+
+</p>
+</details>
+
+---
