@@ -2,7 +2,7 @@
 
 ---
 
-##### Какой будет вывод?
+##### 1. Какой будет вывод?
 ```javascript
 console.log(user)
 var user = 'Jon Snow'
@@ -23,7 +23,7 @@ var user = 'Jon Snow'
 
 ---
 
-##### Какой будет вывод?
+##### 2. Какой будет вывод?
 ```javascript
 var person = 'Hodor';
 
@@ -53,7 +53,7 @@ console.log(typeof person)
 
 ---
 
-##### Какой будет вывод?
+##### 3. Какой будет вывод?
 
 ```javascript
 console.log(city)
@@ -77,7 +77,7 @@ const city = 'Meereen'
 
 ---
 
-##### Какой будет вывод?
+##### 4. Какой будет вывод?
 
 ```javascript
 function outer() {
@@ -108,7 +108,7 @@ outer()
 
 ---
 
-##### В какую области видимости будет записана переменная `name`?
+##### 5. В какую области видимости будет записана переменная `name`?
 
 ```javascript
 
