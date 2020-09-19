@@ -1,4 +1,10 @@
-# Javascript Test: Async
+<div align="center">
+
+<h1>Javascript. Тесты по асинхронности</h1>
+
+<a href="https://github.com/dollaween/javascript-tests">На главную</a> | <a href="https://github.com/dollaween/javascript-questions">Вопросы</a> | <a href="https://github.com/dollaween/javascript-tasks">Задачи</a>
+
+</div>
 
 ---
 
@@ -61,6 +67,17 @@ button.click()
 <p>
 
 **Ответ: 4**
+
+В тесте продемонстрирован side-эффект при исполнении микрозадач. В данном случае, пользовательское поведение будет исполнено иначе, чем прямой вызов функции.
+
+Разберем работу движка по шагам:
+1. Выполняется `button.click()`. Мы кладем его в стек вызовов.
+2. Переходим в `handleClick` `button`-а.
+3. Выполняем `Promise.resolve`. Он добавляет нам микротаску `then` в очередь. `Promise.resolve` исполняется.
+4. Далее переходим в `console.log` и выводим `Moskow`.
+5. Мы закончили тело `handleClick` `button`-а и выходим из него, снимаем его со стека. Но наш синхронный код (click) не закончился, потому что есть другие хендлеры и стек не очищен.
+6. Переходим в `handleClick` `container`-а и выводим в `console.log` `Novosibirsk`.
+7. Стек очистился, исполняется микротаска `then` и в `console.log` выводится `Piter`.
 
 </p>
 </details>
