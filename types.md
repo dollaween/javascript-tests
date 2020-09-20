@@ -36,3 +36,26 @@ typeof 'number'
 </p>
 </details>
 
+---
+
+##### 2. Какой будет вывод?
+
+```javascript
+console.log( typeof null )
+console.log( null instanceof Object )
+```
+
+1. `null` `true`
+2. `null` `false`
+3. `object` `true`
+4. `object` `false`
+
+<details><summary><b>Ответ</b></summary>
+<p>
+
+**Ответ: 4**
+
+</p>
+</details>
+
+---
