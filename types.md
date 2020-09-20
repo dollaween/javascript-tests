@@ -117,7 +117,33 @@ console.log( hunter1 + hunter2 )
 1. `[object Object][object Object]`
 2. `{ name: 'Din' }`
 3. `{ name: 'SamDin' }`
-4. `SyntaxError`
+4. `SamDin`
+
+<details><summary><b>Ответ</b></summary>
+<p>
+
+**Ответ: 1**
+
+</p>
+</details>
+
+---
+
+##### 6. Какой будет вывод?
+
+```javascript
+const hunter1 = { name: 'Sam' }
+const hunter2 = { name: 'Din' }
+
+console.log( hunter1 >= hunter2 )
+console.log( hunter1 === hunter2 )
+console.log( hunter1 > hunter2 )
+```
+
+1. `true` `false` `false`
+2. `false` `false` `false`
+3. `false` `true` `false`
+4. `true` `true` `true`
 
 <details><summary><b>Ответ</b></summary>
 <p>
