@@ -11,6 +11,25 @@
 ##### 1. Какой будет вывод?
 
 ```javascript
+console.log( NaN === NaN )
+```
+
+1. `true`
+2. `false`
+
+<details><summary><b>Ответ</b></summary>
+<p>
+
+**Ответ: 2**
+
+</p>
+</details>
+
+---
+
+##### 2. Какой будет вывод?
+
+```javascript
 console.log( typeof typeof NaN )
 ```
 
@@ -38,7 +57,7 @@ typeof 'number'
 
 ---
 
-##### 2. Какой будет вывод?
+##### 3. Какой будет вывод?
 
 ```javascript
 console.log( typeof null )
@@ -59,3 +78,27 @@ console.log( null instanceof Object )
 </details>
 
 ---
+
+##### 4. Какой будет вывод?
+
+```javascript
+console.log( typeof {} instanceof Object )
+```
+
+1. `boolean`
+2. `object`
+3. `true`
+4. `false`
+
+<details><summary><b>Ответ</b></summary>
+<p>
+
+**Ответ: 4**
+
+Сперва будет выполнен оператор `typeof {}`. Далее мы получим операцию:
+```javascript
+'object' instanceof Object
+```
+
+</p>
+</details>
