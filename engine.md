@@ -1,6 +1,6 @@
 <div align="center">
 
-<h1>Javascript. Тесты по движку</h1>
+<h1>Javascript. Тест по движку</h1>
 
 <a href="https://github.com/dollaween/javascript-tests">На главную</a> | <a href="https://github.com/dollaween/javascript-questions">Вопросы</a> | <a href="https://github.com/dollaween/javascript-tasks">Задачи</a>
 

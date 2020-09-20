@@ -1,6 +1,6 @@
 <div align="center">
 
-<h1>Javascript. Тесты по числам</h1>
+<h1>Javascript. Тест по типам</h1>
 
 <a href="https://github.com/dollaween/javascript-tests">На главную</a> | <a href="https://github.com/dollaween/javascript-questions">Вопросы</a> | <a href="https://github.com/dollaween/javascript-tasks">Задачи</a>
 
@@ -11,15 +11,12 @@
 ##### 1. Какой будет вывод?
 
 ```javascript
-let num = 2**53
-// 9007199254740992
-
-console.log(num + 5)
+console.log( typeof typeof NaN )
 ```
 
-1. `9007199254740997`
-2. `9007199254740996`
-3. `Error: Too Big Number`
+1. `number`
+2. `string`
+3. `NaN`
 4. `SyntaxError`
 
 <details><summary><b>Ответ</b></summary>
@@ -27,7 +24,15 @@ console.log(num + 5)
 
 **Ответ: 2**
 
-Из-за ограничений в вычислениях, `2**53` — это максимальное число, которое обеспечивает точность вычислений.
+Операцию можно разложить на две:
+```javascript
+typeof NaN
+// 'number'
+
+typeof 'number'
+// string
+```
 
 </p>
 </details>
+
