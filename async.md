@@ -81,3 +81,37 @@ button.click()
 
 </p>
 </details>
+
+---
+
+##### 3. Какой будет вывод?
+
+```javascript
+async function fn() {
+
+  let result = await Promise
+    .resolve(10)
+    .then(x => x + 1)
+    .catch(x => x + 2)
+    .then(x => x + 3)
+
+  console.log(result)
+}
+
+fn()
+```
+
+1. `11`
+2. `12`
+3. `13`
+4. `14`
+
+<details><summary><b>Ответ</b></summary>
+<p>
+
+**Ответ: 4**
+
+</p>
+</details>
+
+---
