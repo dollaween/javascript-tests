@@ -11,10 +11,10 @@
 ##### 1. Какой будет порядок вывода консолей?
 
 ```javascript
-(async () => { await console.log('Async Await'); })()
-setTimeout(() => console.log('Timeout'), 0);
-Promise.resolve().then(() => console.log('Promise'));
-console.log('Log');
+(async () => { await console.log('Async Await') })()
+setTimeout(() => console.log('Timeout'), 0)
+Promise.resolve().then(() => console.log('Promise'))
+console.log('Log')
 ```
 
 1. `Async Await`, `Timeout`, `Promise`, `Log`

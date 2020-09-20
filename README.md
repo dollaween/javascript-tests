@@ -12,4 +12,5 @@
 ### Категории тестов:
 * [Движок](./engine.md)
 * [Асинхронность](./async.md)
+* [Числа](./numbers.md)
 * [Typescript](./typescript.md)
