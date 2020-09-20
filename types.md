@@ -102,3 +102,27 @@ console.log( typeof {} instanceof Object )
 
 </p>
 </details>
+
+---
+
+##### 5. Какой будет вывод?
+
+```javascript
+const hunter1 = { name: 'Sam' }
+const hunter2 = { name: 'Din' }
+
+console.log( hunter1 + hunter2 )
+```
+
+1. `[object Object][object Object]`
+2. `{ name: 'Din' }`
+3. `{ name: 'SamDin' }`
+4. `SyntaxError`
+
+<details><summary><b>Ответ</b></summary>
+<p>
+
+**Ответ: 1**
+
+</p>
+</details>
