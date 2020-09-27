@@ -148,7 +148,7 @@ console.log( hunter1 > hunter2 )
 <details><summary><b>Ответ</b></summary>
 <p>
 
-**Ответ: 1**
+**Ответ: 1**ls
 
 </p>
 </details>
