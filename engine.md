@@ -285,3 +285,38 @@ getWinner().bind({ winner: 'Johny' })()
 </details>
 
 ---
+
+##### 10. Какой будет порядок alert'ов?
+
+```html
+<div id="container">
+  <div id="video">
+    <button id="button">Play!</button>
+  </div>
+</div>
+```
+
+```javascript
+button.addEventListener('click', () => alert('button'), false)
+video.addEventListener('click', () => alert('video'), false)
+container.addEventListener('click', () => alert('container'), true)
+```
+
+1. `container` `video` `button`
+2. `button` `video` `container`
+3. `container` `button` `video`
+4. `button` `container` `video`
+
+<details><summary><b>Ответ</b></summary>
+<p>
+
+**Ответ: 3**
+
+Третьим аргументом в `addEventListener` устанавливается захват (`capture`), который определяет на какой стадии будет исполнена функция: `true` — на стадии захвата, `false` – на стадии всплытия.
+
+В первую очередь будут выполнены все слушатели со значением `true` в порядке вложенности от предка к потомку. Затем будут выполнены все слушатели со значением `false` в обратном порядке.
+
+</p>
+</details>
+
+---
