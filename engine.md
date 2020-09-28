@@ -320,3 +320,41 @@ container.addEventListener('click', () => alert('container'), true)
 </details>
 
 ---
+
+##### 11. Какой будет вывод?
+
+```html
+<div id="container">
+  <button id="button">Play!</button>
+</div>
+```
+
+```javascript
+button.addEventListener('click', () => {});
+container.addEventListener('click', fn);
+
+function fn(e) {
+  console.log(e.target.tagName, e.currentTarget.tagName, this.tagName);
+}
+```
+
+1. `BUTTON` `DIV` `DIV`
+2. `DIV` `DIV` `DIV`
+3. `BUTTON` `BUTTON` `BUTTON`
+4. `BUTTON` `BUTTON` `DIV`
+
+<details><summary><b>Ответ</b></summary>
+<p>
+
+**Ответ: 1**
+
+`e.target` — это исходный элемент, на котором произошло событие, в процессе всплытия он неизменен.
+
+`e.currentTarget` — это текущий элемент, до которого дошло всплытие.
+
+Если функция была определена не как стрелочная, то `e.currentTarget` и `this` — совпадают.
+
+</p>
+</details>
+
+---
