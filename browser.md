@@ -33,6 +33,8 @@ console.log( sessionStorage.getItem('user') )
 
 **Ответ: 1**
 
+`localStorage` и `sessionStorage` хранят данные только в виде строк. Когда нам приходит объект, он преобразуется в строку `[object Object]`.
+
 `localStorage` и `sessionStorage` имеют одно и то же API и ведут себя идентично, за исключением некоторых условий:
 1. `localStorage` один на всех вкладках в рамках одного истоничка, `sessionStorage` на каждой вкладке свой.
 2. `localStorage` сохраняется после перезапуска браузера и ОС, `sessionStorage` пропадает даже после закрытия/открытия вкладки.
