@@ -363,15 +363,15 @@ function fn(e) {
 
 ```javascript
 const person = {
-  firstName: 'Vasya',
-  ...(false && { lastName: 'Plyhin' })
+  firstName: 'Vasilii',
+  ...(false && { lastName: 'Pliukhin' })
 }
 
 console.log(`${person.firstName} ${person.lastName}`);
 ```
 
-1. `Vasya Plyhin`
-2. `Vasya undefined`
+1. `Vasilii Pliukhin`
+2. `Vasilii undefined`
 3. `SyntaxError: Unexpected token '('`
 4. `SyntaxError: false is not spread operator`
 
@@ -380,7 +380,7 @@ console.log(`${person.firstName} ${person.lastName}`);
 
 **Ответ: 2**
 
-В конструкции `...(false && { lastName: 'Plyhin' }` мы всегда получаем `...(false)`. В запуске такой конструкции вне объекта произойдет ошибка `SyntaxError: Unexpected token '('`. Но в рамках объекта, `false`, как и другие примитивы, будут преобразованы оператором spread в пустой объект `{}`. Поэтому ошибки не произойдет.
+В конструкции `...(false && { lastName: 'Pliukhin' }` мы всегда получаем `...(false)`. В запуске такой конструкции вне объекта произойдет ошибка `SyntaxError: Unexpected token '('`. Но в рамках объекта, `false`, как и другие примитивы, будут преобразованы оператором spread в пустой объект `{}`. Поэтому ошибки не произойдет.
 
 </p>
 </details>
