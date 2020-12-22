@@ -361,12 +361,6 @@ function fn(e) {
 
 ##### 12. Какой будет вывод?
 
-```html
-<div id="container">
-  <button id="button">Play!</button>
-</div>
-```
-
 ```javascript
 const person = {
   firstName: 'Vasya',
