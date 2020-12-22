@@ -321,7 +321,7 @@ container.addEventListener('click', () => alert('container'), true)
 
 ---
 
-##### 11. Какой будет вывод?
+##### 11. Какой будет вывод после нажатия на `button`?
 
 ```html
 <div id="container">
