@@ -31,3 +31,24 @@ console.log(num + 5)
 
 </p>
 </details>
+
+---
+
+##### 2. Какой будет вывод?
+
+```javascript
+console.log(Infinity - Infinity)
+```
+
+1. `Infinity`
+2. `-Infinity`
+3. `NaN`
+4. `SyntaxError`
+
+<details><summary><b>Ответ</b></summary>
+<p>
+
+**Ответ: 3**
+
+</p>
+</details>
