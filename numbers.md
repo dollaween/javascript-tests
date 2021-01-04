@@ -52,3 +52,24 @@ console.log(Infinity - Infinity)
 
 </p>
 </details>
+
+---
+
+##### 3. Какой будет вывод?
+
+```javascript
+console.log(-1 / 0)
+```
+
+1. `Infinity`
+2. `-Infinity`
+3. `NaN`
+4. `SyntaxError`
+
+<details><summary><b>Ответ</b></summary>
+<p>
+
+**Ответ: 2**
+
+</p>
+</details>
