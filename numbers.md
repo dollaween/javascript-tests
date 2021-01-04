@@ -27,7 +27,7 @@ console.log(num + 5)
 
 **Ответ: 2**
 
-Из-за ограничений в вычислениях, `2**53` — это максимальное число, которое обеспечивает точность вычислений.
+Из-за ограничений в вычислениях, `2**53` — это максимальное число, которое обеспечивает точность вычислений. Оно же хранится в константе Number.MAX_SAFE_INTEGER.
 
 </p>
 </details>
@@ -91,6 +91,37 @@ console.log(-Infinity + NaN)
 <p>
 
 **Ответ: 3**
+
+</p>
+</details>
+
+---
+
+##### 5. Какой будет вывод?
+
+```javascript
+console.log(Number.isInteger(0))
+console.log(Number.isInteger('0'))
+console.log(Number.isInteger(1.0))
+console.log(Number.isInteger(1.0000000000000001))
+```
+
+1. `false false true false`
+2. `true false true false`
+3. `true true true false`
+4. `true false true true`
+
+<details><summary><b>Ответ</b></summary>
+<p>
+
+**Ответ: 4**
+
+Метод `Number.isInteger()` — определяет, является ли переданное значение целым числом.
+
+Из-за неточности в вычислениях, мы имеем следующее:
+* `Number.isInteger(1.000000000000001)` — `false`
+* `Number.isInteger(1.0000000000000001)` — `true`
+* `Number.isInteger(1.00000000000000001)` — `true`
 
 </p>
 </details>
