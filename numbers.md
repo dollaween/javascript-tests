@@ -73,3 +73,24 @@ console.log(-1 / 0)
 
 </p>
 </details>
+
+---
+
+##### 4. Какой будет вывод?
+
+```javascript
+console.log(Infinity + NaN)
+```
+
+1. `Infinity`
+2. `-Infinity`
+3. `NaN`
+4. `SyntaxError`
+
+<details><summary><b>Ответ</b></summary>
+<p>
+
+**Ответ: 3**
+
+</p>
+</details>
