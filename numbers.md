@@ -79,7 +79,7 @@ console.log(-1 / 0)
 ##### 4. Какой будет вывод?
 
 ```javascript
-console.log(Infinity + NaN)
+console.log(-Infinity + NaN)
 ```
 
 1. `Infinity`
