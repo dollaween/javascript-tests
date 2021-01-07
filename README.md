@@ -14,5 +14,6 @@
 * [Асинхронность](./async.md)
 * [Типы](./types.md)
 * [Числа](./numbers.md)
+* [Массивы](./arrays.md)
 * [Браузер](./browser.md)
 * [Typescript](./typescript.md)
