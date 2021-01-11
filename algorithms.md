@@ -329,3 +329,35 @@ function print(arr) {
 
 </p>
 </details>
+
+---
+
+##### 10. Чему равна нотация О большое?
+
+```javascript
+function print(n) {
+  for (let i = 0; i < Math.max(10, n); i++) {
+    console.log(i)
+  }
+}
+```
+
+1. `O(1)`
+2. `O(N)`
+3. `O(N^2)`
+4. `O(log N)`
+
+<details><summary><b>Ответ</b></summary>
+<p>
+
+**Ответ:** `2`
+
+Приведем функцию к псевдокоду:
+```javascript
+function print(arr) {
+  for ()        // N раз
+}
+```
+
+</p>
+</details>
