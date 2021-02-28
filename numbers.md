@@ -125,3 +125,27 @@ console.log(Number.isInteger(1.0000000000000001))
 
 </p>
 </details>
+
+
+---
+
+##### 6. Какой будет вывод?
+
+```javascript
+const n = 10
+const answer = n++ + n++
+console.log()
+```
+
+1. `20`
+2. `21`
+3. `22`
+4. `23`
+
+<details><summary><b>Ответ</b></summary>
+<p>
+
+**Ответ: 2**
+
+</p>
+</details>
