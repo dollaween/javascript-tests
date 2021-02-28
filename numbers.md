@@ -134,7 +134,7 @@ console.log(Number.isInteger(1.0000000000000001))
 ```javascript
 const n = 10
 const answer = n++ + n++
-console.log()
+console.log(answer)
 ```
 
 1. `20`
