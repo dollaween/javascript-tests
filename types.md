@@ -383,6 +383,55 @@ console.log(null == 0)
 
 ---
 
+##### 17. Какой будет вывод?
+
+```javascript
+console.log(2 > 1 > 2 === false)
+```
+
+1. `true`
+2. `false`
+
+<details><summary><b>Ответ</b></summary>
+<p>
+
+**Ответ: 1**
+
+</p>
+</details>
+
+---
+
+<div align="center">
+
+### Вычисление
+
+</div>
+
+---
+
+##### 1. Какой будет вывод?
+
+```javascript
+console.log('10' + 5)
+console.log('10' - 5)
+```
+
+1. `15`, `5`
+2. `105`, `105`
+3. `105`, `15`
+4. `15`, `105`
+
+<details><summary><b>Ответ</b></summary>
+<p>
+
+**Ответ: 3**
+
+</p>
+</details>
+
+---
+
 <div align="center">
 
 ### Другое
