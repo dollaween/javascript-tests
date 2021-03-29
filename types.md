@@ -8,10 +8,12 @@
 
 ---
 
+## Сравнение типов
+
 ##### 1. Какой будет вывод?
 
 ```javascript
-console.log( NaN === NaN )
+console.log(NaN === NaN)
 ```
 
 1. `true`
@@ -24,6 +26,48 @@ console.log( NaN === NaN )
 
 </p>
 </details>
+
+---
+
+##### 2. Какой будет вывод?
+
+```javascript
+console.log([] === [])
+```
+
+1. `true`
+2. `false`
+
+<details><summary><b>Ответ</b></summary>
+<p>
+
+**Ответ: 2**
+
+</p>
+</details>
+
+---
+
+##### 3. Какой будет вывод?
+
+```javascript
+console.log({} === {})
+```
+
+1. `true`
+2. `false`
+
+<details><summary><b>Ответ</b></summary>
+<p>
+
+**Ответ: 2**
+
+</p>
+</details>
+
+---
+
+## Другое
 
 ---
 
