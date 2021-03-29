@@ -427,12 +427,61 @@ console.log('10' - 5)
 
 **Ответ: 3**
 
+```js
+'10' + 5
+'10' + '5'
+'105'
+```
+
+```js
+'10' - 5
+10 - 5
+5
+```
+
 </p>
 </details>
 
 ---
 
 ##### 2. Какой будет вывод?
+
+```javascript
+console.log(1 + 2 + 'number')
+console.log('number' + 1 + 2)
+```
+
+1. `12number`, `number12`
+2. `3number`, `number3`
+3. `3number`, `number12`
+4. `12number`, `number3`
+
+<details><summary><b>Ответ</b></summary>
+<p>
+
+**Ответ: 3**
+
+```js
+1 + 2 + 'number'
+3 + 'number'
+'3' + 'number'
+'3number'
+```
+
+```js
+'number' + 1 + 2
+'number' + '1' + 2
+'number1' + 2
+'number1' + '2'
+'number12'
+```
+
+</p>
+</details>
+
+---
+
+##### 3. Какой будет вывод?
 
 ```javascript
 console.log(null + undefined)
@@ -448,12 +497,18 @@ console.log(null + undefined)
 
 **Ответ: 4**
 
+```js
+null + undefined
+0 + NaN
+NaN
+```
+
 </p>
 </details>
 
 ---
 
-##### 3. Какой будет вывод?
+##### 4. Какой будет вывод?
 
 ```javascript
 console.log([1] + [1, 2])
