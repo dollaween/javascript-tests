@@ -172,6 +172,31 @@ console.log({} == 0)
 </p>
 </details>
 
+
+---
+
+##### 8. Какой будет вывод?
+
+```javascript
+console.log('0' == 0)
+console.log(Boolean('0') == Boolean(0))
+```
+
+1. `true`, `true`
+2. `false`, `false`
+3. `true`, `false`
+4. `false`, `true`
+
+<details><summary><b>Ответ</b></summary>
+<p>
+
+**Ответ: 3**
+
+`Boolean(0)` — `false`, `Boolean('0')` — `true`.
+
+</p>
+</details>
+
 ---
 
 <div align="center">
