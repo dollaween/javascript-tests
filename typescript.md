@@ -1,13 +1,5 @@
 <div align="center">
 
-<h1>Тест по Typescript</h1>
-
-<a href="https://github.com/dollaween/javascript-tests">На главную</a> | <a href="https://github.com/dollaween/javascript-questions">Вопросы</a> | <a href="https://github.com/dollaween/javascript-tasks">Задачи</a>
-
-</div>
-
-<div align="center">
-
 # Тест по Typescript
 
 [Вопросы](https://github.com/dollaween/javascript-questions)
