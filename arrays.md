@@ -1,8 +1,12 @@
 <div align="center">
 
-<h1>Javascript. Тест по массивам</h1>
+# Тест по массивам
 
-<a href="https://github.com/dollaween/javascript-tests">На главную</a> | <a href="https://github.com/dollaween/javascript-questions">Вопросы</a> | <a href="https://github.com/dollaween/javascript-tasks">Задачи</a>
+[Вопросы](https://github.com/dollaween/javascript-questions)
+|
+[Тесты](https://github.com/dollaween/javascript-tests)
+|
+[Задачи](https://github.com/dollaween/javascript-tasks)
 
 </div>
 
