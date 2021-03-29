@@ -172,7 +172,6 @@ console.log({} == 0)
 </p>
 </details>
 
-
 ---
 
 ##### 8. Какой будет вывод?
@@ -193,6 +192,118 @@ console.log(Boolean('0') == Boolean(0))
 **Ответ: 3**
 
 `Boolean(0)` — `false`, `Boolean('0')` — `true`.
+
+</p>
+</details>
+
+---
+
+##### 9. Какой будет вывод?
+
+```javascript
+console.log('' == false)
+console.log('0' == false)
+```
+
+1. `true`, `true`
+2. `false`, `false`
+3. `true`, `false`
+4. `false`, `true`
+
+<details><summary><b>Ответ</b></summary>
+<p>
+
+**Ответ: 1**
+
+</p>
+</details>
+
+---
+
+##### 10. Какой будет вывод?
+
+```javascript
+console.log(null === null)
+console.log(null == null)
+console.log(undefined === undefined)
+console.log(undefined == undefined)
+```
+
+1. `true`, `true`, `true`, `true`
+2. `false`, `false`, `false`, `false`
+3. `true`, `false`, `true`, `false`
+4. `false`, `true`, `false`, `true`
+
+<details><summary><b>Ответ</b></summary>
+<p>
+
+**Ответ: 1**
+
+</p>
+</details>
+
+---
+
+##### 11. Какой будет вывод?
+
+```javascript
+console.log(null === undefined)
+console.log(null == undefined)
+```
+
+1. `true`, `true`
+2. `false`, `false`
+3. `true`, `false`
+4. `false`, `true`
+
+<details><summary><b>Ответ</b></summary>
+<p>
+
+**Ответ: 4**
+
+</p>
+</details>
+
+---
+
+##### 12. Какой будет вывод?
+
+```javascript
+console.log(null == 0)
+console.log(undefined == 0)
+```
+
+1. `true`, `true`
+2. `false`, `false`
+3. `true`, `false`
+4. `false`, `true`
+
+<details><summary><b>Ответ</b></summary>
+<p>
+
+**Ответ: 2**
+
+</p>
+</details>
+
+---
+
+##### 13. Какой будет вывод?
+
+```javascript
+console.log(null == 0)
+console.log(undefined == 0)
+```
+
+1. `true`, `true`
+2. `false`, `false`
+3. `true`, `false`
+4. `false`, `true`
+
+<details><summary><b>Ответ</b></summary>
+<p>
+
+**Ответ: 2**
 
 </p>
 </details>
