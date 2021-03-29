@@ -20,10 +20,13 @@
 
 ```javascript
 console.log(NaN === NaN)
+console.log(NaN == NaN)
 ```
 
-1. `true`
-2. `false`
+1. `true`, `true`
+2. `false`, `false`
+3. `true`, `false`
+4. `false`, `true`
 
 <details><summary><b>Ответ</b></summary>
 <p>
@@ -39,10 +42,13 @@ console.log(NaN === NaN)
 
 ```javascript
 console.log([] === [])
+console.log([] == [])
 ```
 
-1. `true`
-2. `false`
+1. `true`, `true`
+2. `false`, `false`
+3. `true`, `false`
+4. `false`, `true`
 
 <details><summary><b>Ответ</b></summary>
 <p>
@@ -58,10 +64,13 @@ console.log([] === [])
 
 ```javascript
 console.log({} === {})
+console.log({} == {})
 ```
 
-1. `true`
-2. `false`
+1. `true`, `true`
+2. `false`, `false`
+3. `true`, `false`
+4. `false`, `true`
 
 <details><summary><b>Ответ</b></summary>
 <p>
