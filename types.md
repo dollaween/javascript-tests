@@ -387,10 +387,10 @@ console.log(null == 0)
 
 ---
 
-##### 2. Какой будет вывод?
+##### 1. Какой будет вывод?
 
 ```javascript
-console.log( typeof typeof NaN )
+console.log(typeof typeof NaN)
 ```
 
 1. `number`
@@ -417,11 +417,11 @@ typeof 'number'
 
 ---
 
-##### 3. Какой будет вывод?
+##### 2. Какой будет вывод?
 
 ```javascript
-console.log( typeof null )
-console.log( null instanceof Object )
+console.log(typeof null)
+console.log(null instanceof Object)
 ```
 
 1. `null` `true`
@@ -439,10 +439,10 @@ console.log( null instanceof Object )
 
 ---
 
-##### 4. Какой будет вывод?
+##### 3. Какой будет вывод?
 
 ```javascript
-console.log( typeof {} instanceof Object )
+console.log(typeof {} instanceof Object)
 ```
 
 1. `boolean`
@@ -465,13 +465,13 @@ console.log( typeof {} instanceof Object )
 
 ---
 
-##### 5. Какой будет вывод?
+##### 4. Какой будет вывод?
 
 ```javascript
 const hunter1 = { name: 'Sam' }
 const hunter2 = { name: 'Din' }
 
-console.log( hunter1 + hunter2 )
+console.log(hunter1 + hunter2)
 ```
 
 1. `[object Object][object Object]`
@@ -489,15 +489,15 @@ console.log( hunter1 + hunter2 )
 
 ---
 
-##### 6. Какой будет вывод?
+##### 5. Какой будет вывод?
 
 ```javascript
 const hunter1 = { name: 'Sam' }
 const hunter2 = { name: 'Din' }
 
-console.log( hunter1 >= hunter2 )
-console.log( hunter1 === hunter2 )
-console.log( hunter1 > hunter2 )
+console.log(hunter1 >= hunter2)
+console.log(hunter1 === hunter2)
+console.log(hunter1 > hunter2)
 ```
 
 1. `true` `false` `false`
