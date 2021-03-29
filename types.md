@@ -33,6 +33,8 @@ console.log(NaN == NaN)
 
 **Ответ: 2**
 
+`NaN` возвращает `false` при любых сравнениях.
+
 </p>
 </details>
 
@@ -304,6 +306,73 @@ console.log(undefined == 0)
 <p>
 
 **Ответ: 2**
+
+</p>
+</details>
+
+---
+
+##### 14. Какой будет вывод?
+
+```javascript
+console.log(null > null)
+console.log(null >= null)
+```
+
+1. `true`, `true`
+2. `false`, `false`
+3. `true`, `false`
+4. `false`, `true`
+
+<details><summary><b>Ответ</b></summary>
+<p>
+
+**Ответ: 4**
+
+</p>
+</details>
+
+---
+
+##### 15. Какой будет вывод?
+
+```javascript
+console.log(undefined > undefined)
+console.log(undefined >= undefined)
+```
+
+1. `true`, `true`
+2. `false`, `false`
+3. `true`, `false`
+4. `false`, `true`
+
+<details><summary><b>Ответ</b></summary>
+<p>
+
+**Ответ: 2**
+
+</p>
+</details>
+
+---
+
+##### 16. Какой будет вывод?
+
+```javascript
+console.log(null > 0)
+console.log(null >= 0)
+console.log(null == 0)
+```
+
+1. `true`, `true`, `true`
+2. `false`, `false`, `false`
+3. `false`, `true`, `true`
+4. `false`, `true`, `false`
+
+<details><summary><b>Ответ</b></summary>
+<p>
+
+**Ответ: 4**
 
 </p>
 </details>
