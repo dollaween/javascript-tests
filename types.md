@@ -99,6 +99,8 @@ console.log('05' == 5)
 
 **Ответ: 4**
 
+При сравнении значений разных типов через оператор `==`, оба значения будут приведены к числу.
+
 </p>
 </details>
 
@@ -120,6 +122,52 @@ console.log(false == 0)
 <p>
 
 **Ответ: 1**
+
+При сравнении значений разных типов через оператор `==`, оба значения будут приведены к числу.
+
+</p>
+</details>
+
+---
+
+##### 6. Какой будет вывод?
+
+```javascript
+console.log([] == 1)
+console.log([] == 0)
+```
+
+1. `true`, `true`
+2. `false`, `false`
+3. `true`, `false`
+4. `false`, `true`
+
+<details><summary><b>Ответ</b></summary>
+<p>
+
+**Ответ: 4**
+
+</p>
+</details>
+
+---
+
+##### 7. Какой будет вывод?
+
+```javascript
+console.log({} == 1)
+console.log({} == 0)
+```
+
+1. `true`, `true`
+2. `false`, `false`
+3. `true`, `false`
+4. `false`, `true`
+
+<details><summary><b>Ответ</b></summary>
+<p>
+
+**Ответ: 2**
 
 </p>
 </details>
