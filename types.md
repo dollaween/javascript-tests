@@ -432,6 +432,48 @@ console.log('10' - 5)
 
 ---
 
+##### 2. Какой будет вывод?
+
+```javascript
+console.log(null + undefined)
+```
+
+1. `null`
+2. `undefined`
+3. `object`
+4. `NaN`
+
+<details><summary><b>Ответ</b></summary>
+<p>
+
+**Ответ: 4**
+
+</p>
+</details>
+
+---
+
+##### 3. Какой будет вывод?
+
+```javascript
+console.log([1] + [1, 2])
+```
+
+1. `1, 1, 2`
+2. `112`
+3. `11, 2`
+4. `1, 12`
+
+<details><summary><b>Ответ</b></summary>
+<p>
+
+**Ответ: 3**
+
+</p>
+</details>
+
+---
+
 <div align="center">
 
 ### Другое
