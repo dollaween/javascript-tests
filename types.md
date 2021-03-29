@@ -400,6 +400,149 @@ console.log(2 > 1 > 2 === false)
 </p>
 </details>
 
+
+---
+
+##### 18. Какой будет вывод?
+
+```javascript
+console.log([1] > null)
+```
+
+1. `true`
+2. `false`
+
+<details><summary><b>Ответ</b></summary>
+<p>
+
+**Ответ: 1**
+
+```js
+[1] > null
+'1' > 0
+1 > 0
+true
+```
+
+</p>
+</details>
+
+---
+
+##### 19. Какой будет вывод?
+
+```javascript
+console.log('true' == true)
+console.log('false' == false)
+```
+
+1. `true`, `true`
+2. `false`, `false`
+3. `true`, `false`
+4. `false`, `true`
+
+<details><summary><b>Ответ</b></summary>
+<p>
+
+**Ответ: 2**
+
+Оператор `==` вызывает преобразование в число.
+
+```js
+`true` == true
+NaN == 1
+false
+```
+
+```js
+`false` == false
+NaN == 0
+false
+```
+
+</p>
+</details>
+
+---
+
+##### 20. Какой будет вывод?
+
+```javascript
+console.log(null == '')
+```
+
+1. `true`
+2. `false`
+
+<details><summary><b>Ответ</b></summary>
+<p>
+
+**Ответ: 2**
+
+Значение `null` равно только `null` или `undefined`.
+
+</p>
+</details>
+
+---
+
+##### 21. Какой будет вывод?
+
+```javascript
+console.log(!!true == !!false)
+console.log(!!'true' == !!'false')
+```
+
+1. `true`, `true`
+2. `false`, `false`
+3. `true`, `false`
+4. `false`, `true`
+
+<details><summary><b>Ответ</b></summary>
+<p>
+
+**Ответ: 4**
+
+```js
+!!true == !!false
+true == false
+false
+```
+
+```js
+!!'true' == !!'false'
+true == true
+true
+```
+
+</p>
+</details>
+
+---
+
+##### 22. Какой будет вывод?
+
+```javascript
+console.log(['x'] == 'x')
+```
+
+1. `true`
+2. `false`
+
+<details><summary><b>Ответ</b></summary>
+<p>
+
+**Ответ: 1**
+
+```js
+['x'] == 'x'
+'x' == 'x'
+true
+```
+
+</p>
+</details>
+
 ---
 
 <div align="center">
@@ -514,15 +657,50 @@ NaN
 console.log([1] + [1, 2])
 ```
 
-1. `1, 1, 2`
+1. `1,1,2`
 2. `112`
-3. `11, 2`
-4. `1, 12`
+3. `11,2`
+4. `1,12`
 
 <details><summary><b>Ответ</b></summary>
 <p>
 
 **Ответ: 3**
+
+```js
+[1] + [1, 2]
+'1' + '1,2'
+'11,2'
+```
+
+</p>
+</details>
+
+---
+
+##### 5. Какой будет вывод?
+
+```javascript
+console.log('foo' + + 'bar')
+```
+
+1. `fooNaN`
+2. `foonull`
+3. `fooundefined`
+4. `foobar`
+
+<details><summary><b>Ответ</b></summary>
+<p>
+
+**Ответ: 1**
+
+Унарный оператор `+` имеет более высокий приоритет, чем обычный оператор `+`. В результате `+'bar'` вычисляется первым.
+
+```js
+'foo' + + 'bar'
+'foo' + NaN
+'fooNaN'
+```
 
 </p>
 </details>
