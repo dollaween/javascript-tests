@@ -707,6 +707,94 @@ console.log('foo' + + 'bar')
 
 ---
 
+##### 6. Какой будет вывод?
+
+```javascript
+console.log([1, 2, 3] + [1, 2, 3])
+```
+
+1. `1,2,31,2,3`
+2. `123123`
+3. `66`
+4. `6,6`
+
+<details><summary><b>Ответ</b></summary>
+<p>
+
+**Ответ: 1**
+
+```js
+[1, 2, 3] + [1, 2, 3]
+'1,2,3' + '1,2,3'
+'1,2,31,2,3'
+```
+
+</p>
+</details>
+
+---
+
+##### 7. Какой будет вывод?
+
+```javascript
+console.log({} + [] + {} + [1])
+```
+
+1. `0[object Object]1`
+2. `0`
+3. `1`
+4. `4`
+
+<details><summary><b>Ответ</b></summary>
+<p>
+
+**Ответ: 1**
+
+```js
+{} + [] + {} + [1]
++ [] + {} + [1]
+0 + {} + [1]
+0 + 'object Object' + [1]
+'0[object Object]' + [1]
+'0[object Object]' + '1'
+'0[object Object]1'
+```
+
+</p>
+</details>
+
+---
+
+##### 8. Какой будет вывод?
+
+```javascript
+console.log(! + [] + [] + ![])
+```
+
+1. `0`
+2. `false`
+3. `0false`
+4. `truefalse`
+
+<details><summary><b>Ответ</b></summary>
+<p>
+
+**Ответ: 4**
+
+```js
+! + [] + [] + ![]
+(!+[]) + [] + (![])
+!0 + [] + false
+true + [] + false
+true + '' + false
+'truefalse'
+```
+
+</p>
+</details>
+
+---
+
 <div align="center">
 
 ### Другое
