@@ -82,6 +82,50 @@ console.log({} == {})
 
 ---
 
+##### 4. Какой будет вывод?
+
+```javascript
+console.log('05' === 5)
+console.log('05' == 5)
+```
+
+1. `true`, `true`
+2. `false`, `false`
+3. `true`, `false`
+4. `false`, `true`
+
+<details><summary><b>Ответ</b></summary>
+<p>
+
+**Ответ: 4**
+
+</p>
+</details>
+
+---
+
+##### 5. Какой будет вывод?
+
+```javascript
+console.log(true == 1)
+console.log(false == 0)
+```
+
+1. `true`, `true`
+2. `false`, `false`
+3. `true`, `false`
+4. `false`, `true`
+
+<details><summary><b>Ответ</b></summary>
+<p>
+
+**Ответ: 1**
+
+</p>
+</details>
+
+---
+
 <div align="center">
 
 ### Другое
