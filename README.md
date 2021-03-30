@@ -16,5 +16,6 @@
 * [Типы](./types.md)
 * [Числа](./numbers.md)
 * [Массивы](./arrays.md)
+* [Объекты](./objects.md)
 * [Браузер](./browser.md)
 * [Typescript](./typescript.md)
